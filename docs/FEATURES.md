@@ -4,19 +4,19 @@
 
 **Legend:** ⬜ Not Started · 🟡 In Progress · ✅ Done · ❌ Blocked · ⏭️ Skipped (moved to FUTURE_SCOPE)
 
-**Overall:** 4 / 54 done · Current phase: **0 — Setup (Done)** · Last updated: 2026-10-13
+**Overall:** 14 / 54 done · Current phase: **1 — Database (Done)** · Last updated: 2026-10-13
 
 | # | Phase | Feature | Priority | Status | Updated | Report / Notes |
 |---|---|---|---|---|---|---|
 | 1 | 0 | Next.js app + packages | 🔴 | ✅ Done | 2026-10-13 | [Report](file:///c:/Users/Dell/OneDrive/Desktop/hackathon/reports/PHASE-0-setup-report.md) |
 | 2 | 0 | Env + gitignore + repo | 🔴 | ✅ Done | 2026-10-13 | [Report](file:///c:/Users/Dell/OneDrive/Desktop/hackathon/reports/PHASE-0-setup-report.md) |
-| 3 | 1 | Tables + constraints | 🔴 | ⬜ Not Started | | |
-| 4 | 1 | Indexes | 🔴 | ⬜ Not Started | | |
-| 5 | 1 | Profile trigger | 🔴 | ⬜ Not Started | | |
-| 6 | 1 | `v_rides_with_seats` view | 🔴 | ⬜ Not Started | | |
-| 7 | 1 | Seat RPC functions (FOR UPDATE) | 🔴 | ⬜ Not Started | | |
-| 8 | 1 | RLS policies | 🔴 | ⬜ Not Started | | |
-| 9 | 1 | Seed data | 🔴 | ⬜ Not Started | | |
+| 3 | 1 | Tables + constraints | 🔴 | ✅ Done | 2026-10-13 | [Report](file:///c:/Users/Dell/OneDrive/Desktop/hackathon/reports/PHASE-1-database-report.md) |
+| 4 | 1 | Indexes | 🔴 | ✅ Done | 2026-10-13 | [Report](file:///c:/Users/Dell/OneDrive/Desktop/hackathon/reports/PHASE-1-database-report.md) |
+| 5 | 1 | Profile trigger | 🔴 | ✅ Done | 2026-10-13 | [Report](file:///c:/Users/Dell/OneDrive/Desktop/hackathon/reports/PHASE-1-database-report.md) |
+| 6 | 1 | `v_rides_with_seats` view | 🔴 | ✅ Done | 2026-10-13 | [Report](file:///c:/Users/Dell/OneDrive/Desktop/hackathon/reports/PHASE-1-database-report.md) |
+| 7 | 1 | Seat RPC functions (FOR UPDATE) | 🔴 | ✅ Done | 2026-10-13 | [Report](file:///c:/Users/Dell/OneDrive/Desktop/hackathon/reports/PHASE-1-database-report.md) |
+| 8 | 1 | RLS policies | 🔴 | ✅ Done | 2026-10-13 | [Report](file:///c:/Users/Dell/OneDrive/Desktop/hackathon/reports/PHASE-1-database-report.md) |
+| 9 | 1 | Seed data | 🔴 | ✅ Done | 2026-10-13 | [Report](file:///c:/Users/Dell/OneDrive/Desktop/hackathon/reports/PHASE-1-database-report.md) |
 | 10 | 2 | Design tokens from design file | 🔴 | ⬜ Not Started | | |
 | 11 | 2 | Login / Signup | 🔴 | ⬜ Not Started | | |
 | 12 | 2 | Middleware route protection | 🔴 | ⬜ Not Started | | |
@@ -46,7 +46,7 @@
 | 36 | 8 | Realtime seat updates | 🟡 | ⬜ Not Started | | |
 | 37 | 8 | Reset demo data | 🟡 | ⬜ Not Started | | |
 | 38 | 8 | Vercel deploy + prod judge test | 🔴 | ⬜ Not Started | | |
-| 39 | 1 | `vehicles` table + seat CHECK by type (bike 1, car 1–3) | 🔴 | ⬜ Not Started | | |
+| 39 | 1 | `vehicles` table + seat CHECK by type (bike 1, car 1–3) | 🔴 | ✅ Done | 2026-10-13 | [Report](file:///c:/Users/Dell/OneDrive/Desktop/hackathon/reports/PHASE-1-database-report.md) |
 | 40 | 3 | My Vehicles page (add/edit/delete car or bike) | 🔴 | ⬜ Not Started | | |
 | 41 | 3 | Offer ride: vehicle select, bike locks 1 seat, car 1–3 | 🔴 | ⬜ Not Started | | |
 | 42 | 4 | Vehicle badge on ride cards (no plate) | 🔴 | ⬜ Not Started | | |
@@ -55,8 +55,8 @@
 | 45 | 7 | Admin vehicles list/remove | 🟡 | ⬜ Not Started | | |
 | 46 | 0 | `.gitignore` + `.env.example` + secret check (no keys on git) | 🔴 | ✅ Done | 2026-10-13 | [Report](file:///c:/Users/Dell/OneDrive/Desktop/hackathon/reports/PHASE-0-setup-report.md) |
 | 47 | 0 | `start.sh`/`stop.sh` + `start.bat`/`stop.bat` one-command run/stop | 🔴 | ✅ Done | 2026-10-13 | [Report](file:///c:/Users/Dell/OneDrive/Desktop/hackathon/reports/PHASE-0-setup-report.md) |
-| 48 | 1 | `driver_verifications` table + verification RPCs | 🔴 | ⬜ Not Started | | |
-| 49 | 1 | Private `id-documents` bucket + storage RLS | 🔴 | ⬜ Not Started | | |
+| 48 | 1 | `driver_verifications` table + verification RPCs | 🔴 | ✅ Done | 2026-10-13 | [Report](file:///c:/Users/Dell/OneDrive/Desktop/hackathon/reports/PHASE-1-database-report.md) |
+| 49 | 1 | Private `id-documents` bucket + storage RLS | 🔴 | ✅ Done | 2026-10-13 | [Report](file:///c:/Users/Dell/OneDrive/Desktop/hackathon/reports/PHASE-1-database-report.md) |
 | 50 | 3 | `/verification` page: ID card + DL upload, status banner | 🔴 | ⬜ Not Started | | |
 | 51 | 3 | Offer ride locked until admin approval (UI + API) | 🔴 | ⬜ Not Started | | |
 | 52 | 7 | Admin Verifications queue: approve / reject / revoke | 🔴 | ⬜ Not Started | | |
@@ -72,3 +72,4 @@
 | 2026-10-13 | — | Added Skiper UI + motion, STRUCTURE.md (#53–54) | Claude |
 | 2026-10-13 | 0 | Updated RULES.md §C.3d & TECH.md with Component + Animation rules (light motion for forms/tables) | Antigravity |
 | 2026-10-13 | 0 | Phase 0 Setup completed and verified (commit `3c1d96d`) | Antigravity |
+| 2026-10-13 | 1 | Phase 1 Database completed: 13 migrations, seed users/data, types, and 14 automated tests passed | Antigravity |

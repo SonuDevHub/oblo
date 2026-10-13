@@ -26,15 +26,17 @@ campus-carpool/
 │  │  ├─ 0002_create_indexes.sql
 │  │  ├─ 0003_create_profile_trigger.sql
 │  │  ├─ 0004_create_views.sql
-│  │  ├─ 0004a_create_verification_functions.sql
-│  │  ├─ 0004b_create_id_documents_bucket.sql
 │  │  ├─ 0005_create_ride_rpc_functions.sql
-│  │  ├─ 0005a_create_vehicle_rpc_functions.sql
 │  │  ├─ 0006_create_seat_rpc_functions.sql
 │  │  ├─ 0007_create_fare_function.sql
 │  │  ├─ 0008_create_admin_functions.sql
-│  │  └─ 0009_enable_rls_policies.sql
-│  └─ seed/seed-demo-data.sql
+│  │  ├─ 0009_create_verification_functions.sql
+│  │  ├─ 0010_create_id_documents_bucket.sql
+│  │  ├─ 0011_create_vehicle_rpc_functions.sql
+│  │  └─ 0012_enable_rls_policies.sql
+│  ├─ seed/
+│  │  ├─ seed-demo-users.mjs               # Node script for creating demo auth users
+│  │  └─ seed-demo-data.sql
 │
 ├─ public/
 │  ├─ icons/ (car.svg, bike.svg — from design)

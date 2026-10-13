@@ -21,31 +21,31 @@ Agent/team: update Status here **and** in `docs/FEATURES.md`.
 | T-002 | Install packages: supabase-js, ssr, zod, sonner, date-fns, supabase CLI | C | 3m | T-001 | in package.json | ✅ |
 | T-003 | shadcn init + add button card input select badge dialog table tabs skeleton | C | 4m | T-001 | components/ui exists | ✅ |
 | T-004 | Copy docs pack (CLAUDE.md, docs/, reports/, .agent/, .gitignore, .env.example, start/stop scripts) | C | 2m | T-001 | files in root | ✅ |
-| T-005 | `cp .env.example .env.local`, fill Supabase keys | A | 3m | — | keys set | 🟡 (User to fill keys) |
-| T-006 | Supabase: Mumbai region, Confirm email OFF | A | 3m | — | settings saved | ⬜ (Manual) |
+| T-005 | `cp .env.example .env.local`, fill Supabase keys | A | 3m | — | keys set | ✅ |
+| T-006 | Supabase: Mumbai region, Confirm email OFF | A | 3m | — | settings saved | ✅ |
 | T-007 | `chmod +x start.sh stop.sh`; test start/stop | C | 2m | T-004,T-005 | site opens & stops | ✅ (Verified key-check exit) |
-| T-008 | GitHub repo, push, add collaborators; secret check | C | 3m | T-004 | only `.env.example` tracked | 🟡 (Secret check ✅; User to provide remote) |
+| T-008 | GitHub repo, push, add collaborators; secret check | C | 3m | T-004 | only `.env.example` tracked | ✅ |
 | T-009 | Put design file in `design/` | B | 2m | — | file present | ⬜ (Manual) |
 | T-010 | **AG:** Phase 0 test + `reports/PHASE-0-setup-report.md` | AG | 5m | T-001…T-009 | report written | ✅ |
 
 ## Phase 1 — Database & backend (0:20–1:00) — Owner A
 | ID | Task | Est | Depends | Done when | Status |
 |---|---|---|---|---|---|
-| T-101 | `0001_create_tables.sql`: profiles, driver_verifications, vehicles, routes, stops, rides, ride_requests, audit_logs + CHECKs (bike=1, car 1–3, rate 1–50, statuses) + UNIQUEs | 10m | T-006 | tables visible | ⬜ |
-| T-102 | `0002_create_indexes.sql` (8 indexes from TECH.md) | 2m | T-101 | `\di` lists them | ⬜ |
-| T-103 | `0003_create_profile_trigger.sql` (role always student) | 3m | T-101 | signup → profile row | ⬜ |
-| T-104 | `0004_create_views.sql` `v_rides_with_seats` (seats_left, is_full, vehicle w/o plate, verified badge) | 4m | T-101 | view returns rows | ⬜ |
-| T-105 | `0004a_create_verification_functions.sql` (is_verified_driver, submit, get_my, admin_review, admin_revoke) | 6m | T-101 | functions callable | ⬜ |
-| T-106 | `0004b_create_id_documents_bucket.sql` (private, 2 MB, jpg/png/pdf, own-folder RLS, admin read) | 4m | T-101 | upload own ✅, other's ❌ | ⬜ |
-| T-107 | `0005a_create_vehicle_rpc_functions.sql` (add/update/delete vehicle, get_ride_contact) | 4m | T-101 | functions callable | ⬜ |
-| T-108 | `0005_create_ride_rpc_functions.sql` (create_ride w/ verification + vehicle checks, search_rides w/ score + full last + pagination, cancel_ride) | 8m | T-104,T-105 | search returns sorted | ⬜ |
-| T-109 | `0006_create_seat_rpc_functions.sql` (request_seat, respond_to_request, cancel_request — FOR UPDATE, auto-reject on full) | 8m | T-108 | overbook impossible | ⬜ |
-| T-110 | `0007_create_fare_function.sql` (segment split, driver included, round ₹) | 6m | T-109 | example = 37/17/6/37 | ⬜ |
-| T-111 | `0008_create_admin_functions.sql` (is_admin, set_user_blocked, override_request, admin_stats, reset_demo) | 5m | T-101 | admin-only | ⬜ |
-| T-112 | `0009_enable_rls_policies.sql` (all tables, no direct writes on requests/verifications) | 5m | T-101 | anon sees nothing | ⬜ |
-| T-113 | `seed-demo-data.sql`: 2 routes+stops+km, 5 users (3 approved drivers, Neha pending, admin), vehicles, 3 rides | 5m | all above | demo data visible | ⬜ |
-| T-114 | Generate `src/types/database.types.ts` | 1m | T-113 | file created | ⬜ |
-| T-115 | **AG:** Phase 1 SQL tests + report | 5m | T-114 | report ✅ | ⬜ |
+| T-101 | `0001_create_tables.sql`: profiles, driver_verifications, vehicles, routes, stops, rides, ride_requests, audit_logs + CHECKs (bike=1, car 1–3, rate 1–50, statuses) + UNIQUEs | 10m | T-006 | tables visible | ✅ |
+| T-102 | `0002_create_indexes.sql` (8 indexes from TECH.md) | 2m | T-101 | `\di` lists them | ✅ |
+| T-103 | `0003_create_profile_trigger.sql` (role always student) | 3m | T-101 | signup → profile row | ✅ |
+| T-104 | `0004_create_views.sql` `v_rides_with_seats` (seats_left, is_full, vehicle w/o plate, verified badge) | 4m | T-101 | view returns rows | ✅ |
+| T-105 | `0004a_create_verification_functions.sql` (is_verified_driver, submit, get_my, admin_review, admin_revoke) | 6m | T-101 | functions callable | ✅ |
+| T-106 | `0004b_create_id_documents_bucket.sql` (private, 2 MB, jpg/png/pdf, own-folder RLS, admin read) | 4m | T-101 | upload own ✅, other's ❌ | ✅ |
+| T-107 | `0005a_create_vehicle_rpc_functions.sql` (add/update/delete vehicle, get_ride_contact) | 4m | T-101 | functions callable | ✅ |
+| T-108 | `0005_create_ride_rpc_functions.sql` (create_ride w/ verification + vehicle checks, search_rides w/ score + full last + pagination, cancel_ride) | 8m | T-104,T-105 | search returns sorted | ✅ |
+| T-109 | `0006_create_seat_rpc_functions.sql` (request_seat, respond_to_request, cancel_request — FOR UPDATE, auto-reject on full) | 8m | T-108 | overbook impossible | ✅ |
+| T-110 | `0007_create_fare_function.sql` (segment split, driver included, round ₹) | 6m | T-109 | example = 37/17/6/37 | ✅ |
+| T-111 | `0008_create_admin_functions.sql` (is_admin, set_user_blocked, override_request, admin_stats, reset_demo) | 5m | T-101 | admin-only | ✅ |
+| T-112 | `0009_enable_rls_policies.sql` (all tables, no direct writes on requests/verifications) | 5m | T-101 | anon sees nothing | ✅ |
+| T-113 | `seed-demo-data.sql`: 2 routes+stops+km, 5 users (3 approved drivers, Neha pending, admin), vehicles, 3 rides | 5m | all above | demo data visible | ✅ |
+| T-114 | Generate `src/types/database.types.ts` | 1m | T-113 | file created | ✅ |
+| T-115 | **AG:** Phase 1 SQL tests + report | 5m | T-114 | report ✅ | ✅ |
 
 ## Phase 2 — Auth & app shell (1:00–1:40)
 | ID | Task | Owner | Est | Depends | Done when | Status |
