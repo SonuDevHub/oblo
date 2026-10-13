@@ -4,7 +4,7 @@
 
 **Legend:** ⬜ Not Started · 🟡 In Progress · ✅ Done · ❌ Blocked · ⏭️ Skipped (moved to FUTURE_SCOPE)
 
-**Overall:** 14 / 54 done · Current phase: **1 — Database (Done)** · Last updated: 2026-10-13
+**Overall:** 19 / 54 done · Current phase: **2 — Auth + App Shell (Completed)** · Last updated: 2026-10-13
 
 | # | Phase | Feature | Priority | Status | Updated | Report / Notes |
 |---|---|---|---|---|---|---|
@@ -17,10 +17,10 @@
 | 7 | 1 | Seat RPC functions (FOR UPDATE) | 🔴 | ✅ Done | 2026-10-13 | [Report](file:///c:/Users/Dell/OneDrive/Desktop/hackathon/reports/PHASE-1-database-report.md) |
 | 8 | 1 | RLS policies | 🔴 | ✅ Done | 2026-10-13 | [Report](file:///c:/Users/Dell/OneDrive/Desktop/hackathon/reports/PHASE-1-database-report.md) |
 | 9 | 1 | Seed data | 🔴 | ✅ Done | 2026-10-13 | [Report](file:///c:/Users/Dell/OneDrive/Desktop/hackathon/reports/PHASE-1-database-report.md) |
-| 10 | 2 | Design tokens from design file | 🔴 | ⬜ Not Started | | |
-| 11 | 2 | Login / Signup | 🔴 | ⬜ Not Started | | |
-| 12 | 2 | Middleware route protection | 🔴 | ⬜ Not Started | | |
-| 13 | 2 | App layout + nav | 🔴 | ⬜ Not Started | | |
+| 10 | 2 | Design tokens from design file | 🔴 | ✅ Done | 2026-10-13 | [Report](file:///c:/Users/Dell/OneDrive/Desktop/hackathon/reports/PHASE-2-auth-shell-report.md) |
+| 11 | 2 | Login / Signup | 🔴 | ✅ Done | 2026-10-13 | [Report](file:///c:/Users/Dell/OneDrive/Desktop/hackathon/reports/PHASE-2-auth-shell-report.md) |
+| 12 | 2 | Middleware route protection | 🔴 | ✅ Done | 2026-10-13 | [Report](file:///c:/Users/Dell/OneDrive/Desktop/hackathon/reports/PHASE-2-auth-shell-report.md) |
+| 13 | 2 | App layout + nav | 🔴 | ✅ Done | 2026-10-13 | [Report](file:///c:/Users/Dell/OneDrive/Desktop/hackathon/reports/PHASE-2-auth-shell-report.md) |
 | 14 | 3 | Offer ride form + validation | 🔴 | ⬜ Not Started | | |
 | 15 | 3 | Trip km + cost preview | 🟡 | ⬜ Not Started | | |
 | 16 | 4 | Search filters (URL params) | 🔴 | ⬜ Not Started | | |
@@ -60,7 +60,7 @@
 | 50 | 3 | `/verification` page: ID card + DL upload, status banner | 🔴 | ⬜ Not Started | | |
 | 51 | 3 | Offer ride locked until admin approval (UI + API) | 🔴 | ⬜ Not Started | | |
 | 52 | 7 | Admin Verifications queue: approve / reject / revoke | 🔴 | ⬜ Not Started | | |
-| 53 | 2 | Skiper UI + motion animated components (restyled, attribution) | 🟡 | ⬜ Not Started | | |
+| 53 | 2 | Skiper UI + motion animated components (restyled, attribution) | 🟡 | ✅ Done | 2026-10-13 | [Report](file:///c:/Users/Dell/OneDrive/Desktop/hackathon/reports/PHASE-2-auth-shell-report.md) |
 | 54 | 8 | App preloader (first visit, ≤1.5 s, our branding) | 🟡 | ⬜ Not Started | | |
 
 ## Change log
@@ -74,3 +74,4 @@
 | 2026-10-13 | 0 | Phase 0 Setup completed and verified (commit `3c1d96d`) | Antigravity |
 | 2026-10-13 | 1 | Phase 1 Database completed: 13 migrations, seed users/data, types, and 14 automated tests passed | Antigravity |
 | 2026-10-13 | 1 | Phase 1 Follow-up fixes completed: exact fare split, standardized messages, seed route verification (v2 report) | Antigravity |
+| 2026-10-13 | 2 | Phase 2 Auth + App Shell completed: design tokens, SSR clients, middleware, login/signup, shells, screenshots (v1 report) | Antigravity |

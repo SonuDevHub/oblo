@@ -43,7 +43,7 @@ for /L %%i in (1,1,60) do (
     start "" "http://localhost:%PORT%"
     exit /b 0
   )
-  timeout /t 1 >nul
+  ping -n 2 127.0.0.1 >nul
 )
 echo [X] Server didn't start in 60s. Check .run\next-dev.log
 pause

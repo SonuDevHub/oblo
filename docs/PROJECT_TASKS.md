@@ -50,16 +50,16 @@ Agent/team: update Status here **and** in `docs/FEATURES.md`.
 ## Phase 2 — Auth & app shell (1:00–1:40)
 | ID | Task | Owner | Est | Depends | Done when | Status |
 |---|---|---|---|---|---|---|
-| T-201 | Extract design tokens → Tailwind theme (colors, fonts, radius, spacing) | B | 10m | T-009 | tokens used, no hardcoded colors | ⬜ |
-| T-202 | `create-browser-client.ts`, `create-server-client.ts` | B | 5m | T-002 | clients work | ⬜ |
-| T-203 | `middleware.ts` (session refresh, protect routes) | B | 5m | T-202 | logged-out → /login | ⬜ |
-| T-204 | Login + Signup pages (as per design, Zod, generic errors) | B | 12m | T-201,T-203 | signup/login work | ⬜ |
-| T-205 | App layout + nav (Search, Offer, My Rides, My Requests, Vehicles, Verification, Admin if admin) + logout | C | 10m | T-201 | nav visible | ⬜ |
-| T-206 | Sonner toaster + `loading.tsx` skeleton pattern | C | 3m | T-205 | toasts show | ⬜ |
-| T-206a | Install `motion`; `motion-presets.ts` + `use-reduced-motion-safe.ts` | B | 4m | T-002 | reduced-motion respected | ⬜ |
-| T-206b | Add Skiper UI pieces the design needs (navbar / text / card animations) into `components/skiper/`, restyled, no 3rd-party brand; attribution in footer | B | 10m | T-201,T-206a | animations match design | ⬜ |
-| T-207 | Admin layout with server-side role check | C | 4m | T-205 | student blocked | ⬜ |
-| T-208 | **AG:** Phase 2 tests + report | AG | 5m | T-201…T-207 | report ✅ | ⬜ |
+| T-201 | Extract design tokens → Tailwind theme (colors, fonts, radius, spacing) | B | 10m | T-009 | tokens used, no hardcoded colors | ✅ |
+| T-202 | `create-browser-client.ts`, `create-server-client.ts` | B | 5m | T-002 | clients work | ✅ |
+| T-203 | `middleware.ts` (session refresh, protect routes) | B | 5m | T-202 | logged-out → /login | ✅ |
+| T-204 | Login + Signup pages (as per design, Zod, generic errors) | B | 12m | T-201,T-203 | signup/login work | ✅ |
+| T-205 | App layout + nav (Search, Offer, My Rides, My Requests, Vehicles, Verification, Admin if admin) + logout | C | 10m | T-201 | nav visible | ✅ |
+| T-206 | Sonner toaster + `loading.tsx` skeleton pattern | C | 3m | T-205 | toasts show | ✅ |
+| T-206a | Install `motion`; `motion-presets.ts` + `use-reduced-motion-safe.ts` | B | 4m | T-002 | reduced-motion respected | ✅ |
+| T-206b | Add Skiper UI pieces the design needs (navbar / text / card animations) into `components/skiper/`, restyled, no 3rd-party brand; attribution in footer | B | 10m | T-201,T-206a | animations match design | ✅ |
+| T-207 | Admin layout with server-side role check | C | 4m | T-205 | student blocked | ✅ |
+| T-208 | **AG:** Phase 2 tests + report | AG | 5m | T-201…T-207 | report ✅ | ✅ |
 
 ## Phase 3 — Verification, vehicles, offer ride (1:40–2:20) — Owner B
 | ID | Task | Est | Depends | Done when | Status |
