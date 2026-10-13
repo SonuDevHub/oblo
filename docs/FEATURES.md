@@ -73,3 +73,4 @@
 | 2026-10-13 | 0 | Updated RULES.md §C.3d & TECH.md with Component + Animation rules (light motion for forms/tables) | Antigravity |
 | 2026-10-13 | 0 | Phase 0 Setup completed and verified (commit `3c1d96d`) | Antigravity |
 | 2026-10-13 | 1 | Phase 1 Database completed: 13 migrations, seed users/data, types, and 14 automated tests passed | Antigravity |
+| 2026-10-13 | 1 | Phase 1 Follow-up fixes completed: exact fare split, standardized messages, seed route verification (v2 report) | Antigravity |

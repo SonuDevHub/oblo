@@ -43,24 +43,24 @@ BEGIN
     RETURNING id INTO v_r1_id;
   END IF;
 
-  -- Route 1 Stops
+  -- Route 1 Stops: Sector 62 (0) -> Indirapuram (4) -> Vaishali (7) -> College (12)
   INSERT INTO public.stops (route_id, name, stop_order, km_from_start)
-  VALUES (v_r1_id, 'Sector 62 Metro', 1, 0)
+  VALUES (v_r1_id, 'Sector 62', 1, 0)
   ON CONFLICT (route_id, stop_order) DO UPDATE SET name = EXCLUDED.name, km_from_start = EXCLUDED.km_from_start
   RETURNING id INTO v_s62_id;
 
   INSERT INTO public.stops (route_id, name, stop_order, km_from_start)
-  VALUES (v_r1_id, 'Indirapuram Habitat Centre', 2, 4)
+  VALUES (v_r1_id, 'Indirapuram', 2, 4)
   ON CONFLICT (route_id, stop_order) DO UPDATE SET name = EXCLUDED.name, km_from_start = EXCLUDED.km_from_start
   RETURNING id INTO v_s_indirapuram_id;
 
   INSERT INTO public.stops (route_id, name, stop_order, km_from_start)
-  VALUES (v_r1_id, 'Vaishali Metro Station', 3, 7)
+  VALUES (v_r1_id, 'Vaishali', 3, 7)
   ON CONFLICT (route_id, stop_order) DO UPDATE SET name = EXCLUDED.name, km_from_start = EXCLUDED.km_from_start
   RETURNING id INTO v_s_vaishali_id;
 
   INSERT INTO public.stops (route_id, name, stop_order, km_from_start)
-  VALUES (v_r1_id, 'Engineering College Gate 1', 4, 12)
+  VALUES (v_r1_id, 'College', 4, 12)
   ON CONFLICT (route_id, stop_order) DO UPDATE SET name = EXCLUDED.name, km_from_start = EXCLUDED.km_from_start
   RETURNING id INTO v_s_college1_id;
 
@@ -163,6 +163,10 @@ BEGIN
   END IF;
 
   -- 5. Seed 3 Rides dated tomorrow
+  -- Clean previous demo ride requests and rides
+  DELETE FROM public.ride_requests;
+  DELETE FROM public.rides;
+
   -- Ride 1 (Rahul): 62 -> College, 08:30, 2 seats, ₹8/km
   IF v_rahul_id IS NOT NULL AND v_rahul_car_id IS NOT NULL THEN
     INSERT INTO public.rides (
