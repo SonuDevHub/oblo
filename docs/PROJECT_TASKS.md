@@ -78,13 +78,13 @@ Agent/team: update Status here **and** in `docs/FEATURES.md`.
 ## Phase 4 — Search & matching (2:20–3:00) — Owner C
 | ID | Task | Est | Depends | Done when | Status |
 |---|---|---|---|---|---|
-| T-401 | `ride-search-filters.tsx` (from, to, date, preferred time, vehicle type) in URL params | 8m | T-205 | URL updates | ⬜ |
-| T-402 | Call `rpc('search_rides')` in server component + pagination (20) | 6m | T-108 | results load | ⬜ |
-| T-403 | `match-label.ts` (Best ≤30m, Good ≤60m, Other) | 3m | — | labels correct | ⬜ |
-| T-404 | `vehicle-badge.tsx`, `verified-driver-badge.tsx`, `route-timeline.tsx` | 6m | T-201 | render | ⬜ |
-| T-405 | `ride-card.tsx` (owner, badges, time, seats left/Full, label, est. fare, button states: your ride / full / requested / request) | 10m | T-403,T-404 | all states visible | ⬜ |
-| T-406 | Empty state + skeleton | 3m | T-405 | shows correctly | ⬜ |
-| T-407 | **AG:** Phase 4 tests + report | 5m | T-401…T-406 | report ✅ | ⬜ |
+| T-401 | `ride-search-filters.tsx` (from, to, date, preferred time, vehicle type) in URL params | 8m | T-205 | URL updates | 🟡 |
+| T-402 | Call `rpc('search_rides')` in server component + pagination (20) | 6m | T-108 | results load | 🟡 |
+| T-403 | `match-label.ts` (Best ≤30m, Good ≤60m, Other) | 3m | — | labels correct | 🟡 |
+| T-404 | `vehicle-badge.tsx`, `verified-driver-badge.tsx`, `route-timeline.tsx` | 6m | T-201 | render | 🟡 |
+| T-405 | `ride-card.tsx` (owner, badges, time, seats left/Full, label, est. fare, button states: your ride / full / requested / request) | 10m | T-403,T-404 | all states visible | 🟡 |
+| T-406 | Empty state + skeleton | 3m | T-405 | shows correctly | 🟡 |
+| T-407 | **AG:** Phase 4 tests + report | 5m | T-401…T-406 | report ✅ | 🟡 |
 
 ## Phase 5 — Requests & judge test (3:00–3:50) 🔴
 | ID | Task | Owner | Est | Depends | Done when | Status |

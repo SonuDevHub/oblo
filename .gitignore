@@ -21,6 +21,7 @@ id-documents/
 
 # ───────── Dependencies & builds ─────────
 node_modules/
+frontend/
 /.pnp
 .pnp.*
 .yarn/*

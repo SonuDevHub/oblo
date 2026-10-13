@@ -23,10 +23,10 @@
 | 13 | 2 | App layout + nav | 🔴 | ✅ Done | 2026-10-13 | [Report](file:///c:/Users/Dell/OneDrive/Desktop/hackathon/reports/PHASE-2-auth-shell-report.md) |
 | 14 | 3 | Offer ride form + validation | 🔴 | ✅ Done | 2026-10-13 | [Report](file:///c:/Users/Dell/OneDrive/Desktop/hackathon/reports/PHASE-3-offer-ride-report.md) |
 | 15 | 3 | Trip km + cost preview | 🟡 | ✅ Done | 2026-10-13 | [Report](file:///c:/Users/Dell/OneDrive/Desktop/hackathon/reports/PHASE-3-offer-ride-report.md) |
-| 16 | 4 | Search filters (URL params) | 🔴 | ⬜ Not Started | | |
-| 17 | 4 | Match sorting + labels | 🔴 | ⬜ Not Started | | |
-| 18 | 4 | Ride card + seats badge | 🔴 | ⬜ Not Started | | |
-| 19 | 4 | Pagination + empty/loading states | 🔴 | ⬜ Not Started | | |
+| 16 | 4 | Search filters (URL params) | 🔴 | 🟡 In Progress | | |
+| 17 | 4 | Match sorting + labels | 🔴 | 🟡 In Progress | | |
+| 18 | 4 | Ride card + seats badge | 🔴 | 🟡 In Progress | | |
+| 19 | 4 | Pagination + empty/loading states | 🔴 | 🟡 In Progress | | |
 | 20 | 5 | Request seat (pickup/drop) | 🔴 | ⬜ Not Started | | |
 | 21 | 5 | Block own ride / full / duplicate | 🔴 | ⬜ Not Started | | |
 | 22 | 5 | Accept / Reject + seat limit | 🔴 | ⬜ Not Started | | |
@@ -49,7 +49,7 @@
 | 39 | 1 | `vehicles` table + seat CHECK by type (bike 1, car 1–3) | 🔴 | ✅ Done | 2026-10-13 | [Report](file:///c:/Users/Dell/OneDrive/Desktop/hackathon/reports/PHASE-1-database-report.md) |
 | 40 | 3 | My Vehicles page (add/edit/delete car or bike) | 🔴 | ✅ Done | 2026-10-13 | [Report](file:///c:/Users/Dell/OneDrive/Desktop/hackathon/reports/PHASE-3-offer-ride-report.md) |
 | 41 | 3 | Offer ride: vehicle select, bike locks 1 seat, car 1–3 | 🔴 | ✅ Done | 2026-10-13 | [Report](file:///c:/Users/Dell/OneDrive/Desktop/hackathon/reports/PHASE-3-offer-ride-report.md) |
-| 42 | 4 | Vehicle badge on ride cards (no plate) | 🔴 | ⬜ Not Started | | |
+| 42 | 4 | Vehicle badge on ride cards (no plate) | 🔴 | 🟡 In Progress | | |
 | 43 | 5 | Full-ride lock (block request + accept, auto-reject pending, reopen on cancel) | 🔴 | ⬜ Not Started | | |
 | 44 | 5 | Plate + phone visible only to accepted rider | 🔴 | ⬜ Not Started | | |
 | 45 | 7 | Admin vehicles list/remove | 🟡 | ⬜ Not Started | | |
