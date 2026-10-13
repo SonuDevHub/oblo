@@ -21,8 +21,8 @@
 | 11 | 2 | Login / Signup | 🔴 | ✅ Done | 2026-10-13 | [Report](file:///c:/Users/Dell/OneDrive/Desktop/hackathon/reports/PHASE-2-auth-shell-report.md) |
 | 12 | 2 | Middleware route protection | 🔴 | ✅ Done | 2026-10-13 | [Report](file:///c:/Users/Dell/OneDrive/Desktop/hackathon/reports/PHASE-2-auth-shell-report.md) |
 | 13 | 2 | App layout + nav | 🔴 | ✅ Done | 2026-10-13 | [Report](file:///c:/Users/Dell/OneDrive/Desktop/hackathon/reports/PHASE-2-auth-shell-report.md) |
-| 14 | 3 | Offer ride form + validation | 🔴 | ⬜ Not Started | | |
-| 15 | 3 | Trip km + cost preview | 🟡 | ⬜ Not Started | | |
+| 14 | 3 | Offer ride form + validation | 🔴 | ✅ Done | 2026-10-13 | [Report](file:///c:/Users/Dell/OneDrive/Desktop/hackathon/reports/PHASE-3-offer-ride-report.md) |
+| 15 | 3 | Trip km + cost preview | 🟡 | ✅ Done | 2026-10-13 | [Report](file:///c:/Users/Dell/OneDrive/Desktop/hackathon/reports/PHASE-3-offer-ride-report.md) |
 | 16 | 4 | Search filters (URL params) | 🔴 | ⬜ Not Started | | |
 | 17 | 4 | Match sorting + labels | 🔴 | ⬜ Not Started | | |
 | 18 | 4 | Ride card + seats badge | 🔴 | ⬜ Not Started | | |
@@ -47,8 +47,8 @@
 | 37 | 8 | Reset demo data | 🟡 | ⬜ Not Started | | |
 | 38 | 8 | Vercel deploy + prod judge test | 🔴 | ⬜ Not Started | | |
 | 39 | 1 | `vehicles` table + seat CHECK by type (bike 1, car 1–3) | 🔴 | ✅ Done | 2026-10-13 | [Report](file:///c:/Users/Dell/OneDrive/Desktop/hackathon/reports/PHASE-1-database-report.md) |
-| 40 | 3 | My Vehicles page (add/edit/delete car or bike) | 🔴 | ⬜ Not Started | | |
-| 41 | 3 | Offer ride: vehicle select, bike locks 1 seat, car 1–3 | 🔴 | ⬜ Not Started | | |
+| 40 | 3 | My Vehicles page (add/edit/delete car or bike) | 🔴 | ✅ Done | 2026-10-13 | [Report](file:///c:/Users/Dell/OneDrive/Desktop/hackathon/reports/PHASE-3-offer-ride-report.md) |
+| 41 | 3 | Offer ride: vehicle select, bike locks 1 seat, car 1–3 | 🔴 | ✅ Done | 2026-10-13 | [Report](file:///c:/Users/Dell/OneDrive/Desktop/hackathon/reports/PHASE-3-offer-ride-report.md) |
 | 42 | 4 | Vehicle badge on ride cards (no plate) | 🔴 | ⬜ Not Started | | |
 | 43 | 5 | Full-ride lock (block request + accept, auto-reject pending, reopen on cancel) | 🔴 | ⬜ Not Started | | |
 | 44 | 5 | Plate + phone visible only to accepted rider | 🔴 | ⬜ Not Started | | |
@@ -57,8 +57,8 @@
 | 47 | 0 | `start.sh`/`stop.sh` + `start.bat`/`stop.bat` one-command run/stop | 🔴 | ✅ Done | 2026-10-13 | [Report](file:///c:/Users/Dell/OneDrive/Desktop/hackathon/reports/PHASE-0-setup-report.md) |
 | 48 | 1 | `driver_verifications` table + verification RPCs | 🔴 | ✅ Done | 2026-10-13 | [Report](file:///c:/Users/Dell/OneDrive/Desktop/hackathon/reports/PHASE-1-database-report.md) |
 | 49 | 1 | Private `id-documents` bucket + storage RLS | 🔴 | ✅ Done | 2026-10-13 | [Report](file:///c:/Users/Dell/OneDrive/Desktop/hackathon/reports/PHASE-1-database-report.md) |
-| 50 | 3 | `/verification` page: ID card + DL upload, status banner | 🔴 | ⬜ Not Started | | |
-| 51 | 3 | Offer ride locked until admin approval (UI + API) | 🔴 | ⬜ Not Started | | |
+| 50 | 3 | `/verification` page: ID card + DL upload, status banner | 🔴 | ✅ Done | 2026-10-13 | [Report](file:///c:/Users/Dell/OneDrive/Desktop/hackathon/reports/PHASE-3-offer-ride-report.md) |
+| 51 | 3 | Offer ride locked until admin approval (UI + API) | 🔴 | ✅ Done | 2026-10-13 | [Report](file:///c:/Users/Dell/OneDrive/Desktop/hackathon/reports/PHASE-3-offer-ride-report.md) |
 | 52 | 7 | Admin Verifications queue: approve / reject / revoke | 🔴 | ⬜ Not Started | | |
 | 53 | 2 | Skiper UI + motion animated components (restyled, attribution) | 🟡 | ✅ Done | 2026-10-13 | [Report](file:///c:/Users/Dell/OneDrive/Desktop/hackathon/reports/PHASE-2-auth-shell-report.md) |
 | 54 | 8 | App preloader (first visit, ≤1.5 s, our branding) | 🟡 | ⬜ Not Started | | |

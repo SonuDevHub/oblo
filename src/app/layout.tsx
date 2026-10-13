@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Sora, Manrope, JetBrains_Mono } from "next/font/google";
 import { Toaster } from "@/components/ui/sonner";
+import { TooltipProvider } from "@/components/ui/tooltip";
 import { MotionProvider } from "@/components/providers/motion-provider";
 import { AppPreloader } from "@/components/skiper/app-preloader";
 import "./globals.css";
@@ -47,9 +48,11 @@ export default function RootLayout({
     >
       <body className="min-h-screen bg-background text-foreground antialiased selection:bg-lime selection:text-ink">
         <MotionProvider>
-          <AppPreloader />
-          {children}
-          <Toaster richColors position="top-right" />
+          <TooltipProvider>
+            <AppPreloader />
+            {children}
+            <Toaster richColors position="top-right" />
+          </TooltipProvider>
         </MotionProvider>
       </body>
     </html>

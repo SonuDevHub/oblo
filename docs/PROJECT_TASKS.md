@@ -64,16 +64,16 @@ Agent/team: update Status here **and** in `docs/FEATURES.md`.
 ## Phase 3 — Verification, vehicles, offer ride (1:40–2:20) — Owner B
 | ID | Task | Est | Depends | Done when | Status |
 |---|---|---|---|---|---|
-| T-301 | `verification-schema.ts` (fields + file ≤2 MB, jpg/png/pdf) | 3m | T-204 | Zod rejects bad input | ⬜ |
-| T-302 | `upload-id-document.ts` → `id-documents/<uid>/id-card.ext`, `dl.ext` | 5m | T-106 | files in bucket | ⬜ |
-| T-303 | `/verification` page + `driver-verification-form.tsx` → `submit_driver_verification` | 10m | T-301,T-302 | status Pending | ⬜ |
-| T-304 | `verification-status-banner.tsx` (not submitted / pending / rejected+reason / approved) | 4m | T-303 | banner per status | ⬜ |
-| T-305 | Minimal admin approve/reject button (temp, for testing) | 3m | T-105 | can approve Neha | ⬜ |
-| T-306 | `vehicle-seat-limits.ts` + `vehicle-schema.ts` | 3m | — | bike 1, car 1–3 | ⬜ |
-| T-307 | `/vehicles` page: `vehicle-form.tsx`, `vehicle-card.tsx` (add/edit/delete) | 8m | T-107,T-306 | car + bike added | ⬜ |
-| T-308 | `ride-offer-schema.ts` + `ride-offer-form.tsx` (vehicle select → seats lock, route → stops, date, time, rate, km/cost preview, banners) | 12m | T-108,T-304,T-307 | ride created | ⬜ |
-| T-309 | `createRideAction` + redirect to My Rides + toast | 3m | T-308 | redirect works | ⬜ |
-| T-310 | **AG:** Phase 3 tests (verification, bike/car limits, API bypass) + report | 6m | T-301…T-309 | report ✅ | ⬜ |
+| T-301 | `verification-schema.ts` (fields + file ≤2 MB, jpg/png/pdf) | 3m | T-204 | Zod rejects bad input | ✅ |
+| T-302 | `upload-id-document.ts` → `id-documents/<uid>/id-card.ext`, `dl.ext` | 5m | T-106 | files in bucket | ✅ |
+| T-303 | `/verification` page + `driver-verification-form.tsx` → `submit_driver_verification` | 10m | T-301,T-302 | status Pending | ✅ |
+| T-304 | `verification-status-banner.tsx` (not submitted / pending / rejected+reason / approved) | 4m | T-303 | banner per status | ✅ |
+| T-305 | Minimal admin approve/reject button (temp, for testing) | 3m | T-105 | can approve Neha | ✅ |
+| T-306 | `vehicle-seat-limits.ts` + `vehicle-schema.ts` | 3m | — | bike 1, car 1–3 | ✅ |
+| T-307 | `/vehicles` page: `vehicle-form.tsx`, `vehicle-card.tsx` (add/edit/delete) | 8m | T-107,T-306 | car + bike added | ✅ |
+| T-308 | `ride-offer-schema.ts` + `ride-offer-form.tsx` (vehicle select → seats lock, route → stops, date, time, rate, km/cost preview, banners) | 12m | T-108,T-304,T-307 | ride created | ✅ |
+| T-309 | `createRideAction` + redirect to My Rides + toast | 3m | T-308 | redirect works | ✅ |
+| T-310 | **AG:** Phase 3 tests (verification, bike/car limits, API bypass) + report | 6m | T-301…T-309 | report ✅ | ✅ |
 
 ## Phase 4 — Search & matching (2:20–3:00) — Owner C
 | ID | Task | Est | Depends | Done when | Status |
